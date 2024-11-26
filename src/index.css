@@ -34,7 +34,9 @@ body {
   border-color: #3b3b3b;
   user-select: none;
 }
-
+main {
+  overflow-y: auto;
+}
 canvas {
   touch-action: none;
 }
