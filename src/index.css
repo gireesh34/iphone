@@ -7,26 +7,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Ensure body and html can scroll */
-html, body {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
 }
 
-/* Ensure the section takes full height */
-section {
-  min-height: 100vh;
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
 }
 
-/* Add touch-specific properties */
-.touch-scroll {
-  -webkit-overflow-scrolling: touch;
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
 }
 body {
   color: white;
   width: 100dvw;
   overflow-x: hidden;
+  overflow-y: auto;
   height: 100%;
   background: #000;
   border-color: #3b3b3b;
