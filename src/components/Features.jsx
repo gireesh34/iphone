@@ -32,7 +32,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section className="h-full common-padding bg-zinc relative overflow-hidden">
+    <section className="h-full common-padding bg-zinc relative overflow-hidden touch-scroll">
       <div className="screen-max-wdith">
         <div className="mb-12 w-full">
           <h1 id="features_title" className="section-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Explore the full story.</h1>

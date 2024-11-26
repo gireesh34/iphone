@@ -7,7 +7,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Ensure body and html can scroll */
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+}
 
+/* Ensure the section takes full height */
+section {
+  min-height: 100vh;
+}
+
+/* Add touch-specific properties */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+}
 body {
   color: white;
   width: 100dvw;
